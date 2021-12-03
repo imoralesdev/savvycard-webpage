@@ -25,19 +25,16 @@
 }
 
 :root {
-	font-family: Arial, Helvetica, sans-serif;
 	height: 100%;
 }
-
-/* REM Variables */
-$viewport: 100vw;
-$design-width: 1920;
-$ten-pixel: 10;
 
 html {
   -webkit-font-smoothing: antialiased;
   /* All rem values will be attach to this value. */
-  font-size: calc(#{$viewport} / #{$design-width} * #{$ten-pixel});
+  font-size: 16px;
+	color: #4A4A4A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 html, body, div, span, applet, object, iframe,

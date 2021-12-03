@@ -1,2 +1,31 @@
 footer#footer.footer(role="footer")
   script(src='/main.js')
+  .footer__container
+    a(href="/").footer__logo
+      svg.footer__logo-icon
+        use(xlink:href='icons.svg#savvycard-logo')
+    .footer__list
+      ul.footer__items
+        li.footer__item
+          .footer__search
+            a(href="javascript:void(0)").footer__search-submit
+              svg.footer__search-icon
+                use(xlink:href='icons.svg#search')
+            input(placeholder="Find a SavvyCard").footer__search-text
+        li.footer__item
+          .footer__item-text
+            | Feedback
+        li.footer__item
+          .footer__item-text
+            | Blog
+        li.footer__item
+          .footer__item-text
+            | Privacy Policy
+        li.footer__item
+          .footer__item-text
+            | Terms of Use
+        li.footer__item
+          .footer__item-text
+            | Support
+  span.footer__copyright
+    | Copyright © 2010-2021 SavvyCard®, U.S. Patent No. 9,625,344

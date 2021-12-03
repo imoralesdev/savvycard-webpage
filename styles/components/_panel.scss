@@ -1,0 +1,335 @@
+/* ==========================================================================
+	PANEL
+========================================================================== */
+.panel {
+  width: 100%;
+  display: block;
+  background: #FFF;
+  
+  &-orange {
+    position: relative;
+    background: #EF942C;
+    background-image: linear-gradient(156deg, #ffb66d 0%, #F68A1F 85%);
+    padding: 0 0 48px;
+    @include desktop {
+      padding: 64px 0 48px;
+    }
+  }
+
+  &--grey {
+    background: #F4F4F4;
+  }
+
+  &__container {
+    padding: 30px 0;
+    max-width: 1140px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    width: calc(100% - 20px);
+    @include desktop {
+      display: flex;
+      padding: 40px 0 60px;
+      width: calc(100% - 10px);
+    }
+    &--about {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__column-a {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    order: 2;
+  }
+
+  &__column-b {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    @include desktop {
+      width: 60%;
+    }
+  }
+
+  &__header {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 1em;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-align: left;
+    line-height: 1.2;
+    @include desktop {
+      font-size: 48px;
+    }
+
+    i {
+      margin: 0 10px;
+    }
+  }
+
+  &__sub-header {
+    padding: 32px 0;
+    font-size: 24px;
+    @include desktop {
+      font-size: 38px;
+    }
+    &--underline {
+      &:after {
+        content: '';
+        border-bottom: solid 1px #F68A1F;
+        width: 10%;
+        height: 1px;
+        display: block;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 14px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2em 0;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-align: left;
+
+    &-sixteen-pixel {
+      width: 75%;
+      margin: auto;
+      padding: 0px 0 42px;
+      line-height: 32px;
+      font-size: 16px;
+    }
+  }
+
+  &__list-item {
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-align: left;
+    font-weight: 600;
+    padding: 0 0 20px;
+    position: relative;
+  }
+
+  &__list-tick {
+    position: relative;
+    display: inline-block;
+    margin: 0 .5em 0 0;
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+
+    svg {
+      background: #FFF;
+      width: 18px;
+      height: 18px;
+      border-radius: 20px;
+      padding: 3px;
+      text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+  }
+
+  &__mobile-shell {
+    position: relative;
+    padding-top: 126.26%;
+    margin: auto;
+    display: none;
+    transform: translateY(-18px);
+    @include desktop {
+      display: block;
+    }
+
+    img {
+      z-index: 1;
+      position: absolute;
+      top: -16%;
+      left: 50%;
+      transform: translateX(-40%);
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__divider {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 70px;
+    transform: translateY(1px);
+    @include desktop {
+      height: auto;
+    }
+  }
+
+  &__video {
+    position: relative;
+    padding-top: 56.26%;
+    margin-bottom: 64px;
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__choice {
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 64px;
+  }
+
+  &__choice-cards {
+    width: 100%;
+    padding: 16px;
+    display: table-cell;
+    cursor: pointer;
+    @include desktop {
+      width: 25%;
+      padding: 0 16px;
+    }
+  }
+
+  &__choice-card {
+    position: relative;
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-decoration: none;
+    top: 0;
+    transition: top .3s ease,-webkit-box-shadow .3s ease;
+    @include desktop {
+      &:hover {
+        top: -16px;
+        box-shadow: 0 0 24px 0 rgb(0 0 0 / 16%), 0 24px 24px 0 rgb(0 0 0 / 24%);
+      }
+    }
+  }
+
+  &__choice-card-image {
+    position: relative;
+    padding-top: 56.26%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+      height: 100%;
+      border-radius: 6px 6px 0 0;
+    }
+  }
+
+  &__choice-card-title {
+    padding: 18px 16px 0;
+    font-weight: 700;
+    text-align: left;
+    min-height: 54px;
+
+    &--orange {
+      color: #F68A1F;
+    }
+
+    &--blue {
+      color: #0093D0;
+    }
+
+    &--green {
+      color: #8CC63F;
+    }
+  }
+
+  &__choice-card-caption {
+    padding: 16px 18px 0;
+    font-weight: 600;
+    text-align: left;
+    height: 64px;
+  }
+
+  &__choice-card-list {
+    min-height: auto;
+    margin: 0 32px 160px;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    padding: 16px 0 0;
+    text-align: left;
+    @include desktop {
+      min-height: 162px;
+    }
+
+    &-item {
+      font-size: 16px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__learn-more {
+    text-align: center;
+    margin: 1em 3em;
+    padding: .5em 0;
+    color: #4A4A4A;
+    font-weight: 600;
+    display: block;
+    border: 1px solid #4A4A4A;
+
+    &--orange {
+      border: #F68A1F solid 1px;
+      color: #F68A1F;
+    }
+
+    &--blue {
+      border: #0093D0 solid 1px;
+      color: #0093D0;
+    }
+
+    &--green {
+      border: #8CC63F solid 1px;
+      color: #8CC63F;
+    }
+  }
+
+  &__small {
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__brand-logo {
+    padding-top: 30%;
+    width: 60%;
+    display: block;
+    margin: auto;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: auto;
+      width: 100%;
+    }
+  }
+}

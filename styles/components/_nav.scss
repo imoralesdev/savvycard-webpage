@@ -1,0 +1,224 @@
+/* ==========================================================================
+	NAV
+========================================================================== */
+.nav {
+  width: auto;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  min-height: 82px;
+  background: #FFF;
+  border-bottom: 1px solid #979797;
+  box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.5);
+
+  &__container {
+    max-width: 1140px;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  &__logo {
+    padding: 10px 0;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include desktop {
+      padding: 20px 0px;
+      width: 20%;
+      margin: 0 auto;
+      position: relative;
+      left: initial;
+      top: initial;
+      transform: translateY(0%);
+    }
+    &-icon {
+      height: 40px;
+      display: inline-block;
+      width: 190px;
+      vertical-align: text-top;
+      @include desktop {
+        height: 40px;
+        width: 190px;
+      }
+    }
+  }
+
+  &__menu-container {
+    width: calc(80% - 44px);
+    padding: 24px 10px 20px;
+    background: #FFF;
+    position: relative;
+    height: auto;
+    vertical-align: top;
+    text-align: right;
+    float: right;
+    margin-right: 10px;
+    display: none;
+    @include desktop {
+      display: inline-block;
+    }
+  }
+
+  &__menu {
+    vertical-align: top;
+    float: left;
+  }
+
+  &__menu-item {
+    overflow: hidden;
+    float: right;
+  }
+
+  &__menu-item a {
+    float: left;
+    line-height: 32px;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: all 0.2s;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 4px;
+    padding: 0 16px;
+    &:hover {
+      color: #EF942C;
+    }
+  }
+
+  &__secondary-menu {
+    display: inline-block;
+  }
+
+  &__secondary-menu-item {
+    float: left;
+    line-height: 32px;
+    text-align: left;
+    text-decoration: none;
+    padding: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: all 0.2s;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 4px;
+    &:hover {
+      color: #EF942C;
+    }
+  }
+
+  &-mobile {
+    display: inline;
+    background: #FFF;
+    font-weight: 600;
+    color: #F3A636;
+    padding: 6px 10px;
+    display: inline-block;
+    border-radius: 2px;
+    margin: 0;
+    border-color: #ccc;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 15%);
+    border: 0px solid;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    @include desktop {
+      display: none;
+    }
+
+    &-burger {
+      display: inline-block;
+      vertical-align: middle;
+      pointer-events: none;
+
+      span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        margin: 3px 4px 4px;
+        position: relative;
+        background: #F3A636;
+        border-radius: 12px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),opacity 0.55s ease,-webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      }
+    }
+
+    &-text {
+      display: inline-block;
+      pointer-events: none;
+      margin: 0 0 0 4px;
+    }
+
+    &--active {
+      .nav-mobile-burger {
+        span:nth-child(1) {
+          transform-origin: 0% 100%;
+          transform: rotate(45deg) translate(-3px, 0px);
+          width: 22px;
+        }
+
+        span:nth-child(2) {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+        }
+
+        span:nth-child(3) {
+          transform-origin: 0% 100%;
+          transform: rotate(-45deg) translate(-2px, 0px);
+          width: 22px;
+        }
+      }
+    }
+
+    &-menu {
+      background: #FFF;
+      border: 1px solid #979797;
+      font-size: 16px;
+      box-shadow: none;
+      width: 100%;
+      position: fixed;
+      z-index: 2;
+      border-top: none;
+      top: 81px;
+      overflow: hidden;
+      transition: height 0.5s ease;
+      display: none;
+      @include desktop {
+        display: none;
+      }
+      &__item {
+        border-top: 1px solid #bababa;
+        a {
+          text-align: left;
+          text-decoration: none;
+          color: #4A4A4A;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 600;
+          transition: all 0.2s;
+          text-transform: capitalize;
+          cursor: pointer;
+          font-size: 14px;
+          margin: 0 4px;
+          line-height: 2.6;
+          padding: 4px 14px;
+          display: block;
+        }
+      }
+      &--active {
+        display: block;
+      }
+    }
+  }
+}

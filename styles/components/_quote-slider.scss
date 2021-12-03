@@ -1,0 +1,128 @@
+/* ==========================================================================
+	QUOTE SLIDER
+========================================================================== */
+.quote-slider {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  user-select: none;
+  margin: 10px auto;
+  @include desktop {
+    width: 80%;
+  }
+
+  &__list {
+    min-height: 200px;
+    position: relative;
+  }
+
+  &__slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    text-align: left;
+
+    &-active {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    color: #0093D0;
+    font-style: italic;
+    text-align: center;
+    margin: 16px auto;
+    font-size: 18px;
+    width: 100%;
+    @include desktop {
+      width: 50%;
+    }
+  }
+
+  &__author {
+    color: #0093D0;
+    font-style: italic;
+    text-align: center;
+    margin: 16px auto;
+    font-size: 18px;
+    width: 50%;
+    &-img {
+      color: #0093D0;
+      font-style: italic;
+      text-align: center;
+      margin: 1em auto;
+      font-size: 18px;
+      width: 50%;
+
+      img {
+        width: 60px;
+        border-radius: 50px;
+        box-shadow: 0 2px 8px 0 rgb(0 0 0 / 50%);
+      }
+    }
+
+    &-info {
+      color: #4A4A4A;
+      display: inline-block;
+      margin: 0;
+      text-align: center;
+    }
+
+    &-name {
+      font-weight: bold;
+    }
+
+    &-title {
+      font-style: italic;
+      font-weight: 400;
+    }
+  }
+
+  &__numbers {
+    margin-top: 48px;
+    text-align: center;
+    color: #4A4A4A;
+    font-weight: 700;
+
+    div {
+      font-size: 18px;
+      margin-top: 48px;
+      display: inline-block;
+      padding: 0 4px;
+    }
+  }
+
+  &__left-arrow,
+  &__right-arrow {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    top: 50%;
+
+    svg {
+      width: 30px;
+      fill: #4F555A;
+      user-select: none;
+      pointer-events: none;
+      @include desktop {
+        width: 60px;
+      } 
+    }
+  }
+
+  &__left-arrow {
+    left: 0;
+    transform: translateY(-50%) rotate(
+180deg);
+  }
+
+  &__right-arrow {
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+}

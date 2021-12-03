@@ -1,4 +1,5 @@
 import Page from "classes/Page"
+import Quote from "components/Quote"
 
 export default class Home extends Page {
   constructor() {
@@ -9,10 +10,15 @@ export default class Home extends Page {
         homeBtn: "#home_btn"
       }
     })
+
+    this.createQuote()
   }
 
   create() {
     super.create()
-    console.log("Home Class")
+  }
+
+  createQuote() {
+    this.quote = new Quote()
   }
 }

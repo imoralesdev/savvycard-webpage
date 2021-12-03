@@ -1,7 +1,66 @@
-header#header.header(role="header")
-  svg#header_logo.header__logo
-    use(xlink:href='icons.svg#basic-logo')
-  nav.navigation
-    a.navigation__item(href="/" alt="Home") Home
-    a.navigation__item(href="/about" alt="About Us") About
-    a.navigation__item(href="#") Contact
+nav.nav
+  div.nav__container
+    a(href="/").nav__logo
+      svg.nav__logo-icon
+        use(xlink:href='icons.svg#savvycard-logo-black')
+    div.nav__menu-container
+      ul.nav__menu
+        li.nav__menu-item
+          a(href="/")
+            | Real Estate
+        li.nav__menu-item
+          a(href="/")
+            | Automotive
+        li.nav__menu-item
+          a(href="/")
+            | Business
+        li.nav__menu-item
+          a(href="/")
+            | Enterprise
+        li.nav__menu-item
+          a(href="/")
+            | SavvySchool
+      ul.nav__secondary-menu
+        li.nav__secondary-menu-item
+          a(href="")
+            | Log In 
+        li.nav__secondary-menu-item.btn--primary
+          a(href="")
+            | Get SavvyCard
+    div.nav-mobile
+      div.nav-mobile-burger
+        span
+        span
+        span
+      div.nav-mobile-text
+        | Menu
+    ul.nav-mobile-menu
+      li.nav-mobile-menu__item
+        a(href="")
+          | Home
+      li.nav-mobile-menu__item
+        a(href="")
+          | Products
+        ul.nav-mobile-menu__extend 
+          li.nav-mobile-menu__extend-item
+            a(href="")
+              | Real Estate
+          li.nav-mobile-menu__extend-item
+            a(href="")
+              | Automotive
+          li.nav-mobile-menu__extend-item
+            a(href="")
+              | Business
+          li.nav-mobile-menu__extend-item
+            a(href="")
+              | Enterprise
+      li.nav-mobile-menu__item
+        a(href="")
+          | SavvySchool
+      li.nav-mobile-menu__item
+        a(href="")
+          | Log In 
+                
+
+                
+

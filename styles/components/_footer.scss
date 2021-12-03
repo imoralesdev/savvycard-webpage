@@ -1,0 +1,137 @@
+/* ==========================================================================
+	FOOTER
+========================================================================== */
+.footer {
+  text-align: left;
+  width: 100%;
+  padding: 36px 0 16px;
+  line-height: 2;
+  background: #4A4A4A;
+
+  &__container {
+    max-width: 1140px;
+    display: block;
+    margin: auto;
+  }
+
+  &__logo {
+    display: inline-block;
+    width: 100%;
+    padding: 4px 0;
+    @include desktop {
+      width: 20%;
+    }
+    &-icon {
+      height: 40px;
+      display: inline-block;
+      width: 100%;
+      vertical-align: text-top;
+    }
+  }
+
+  &__list {
+    display: inline-block;
+    width: 100%;
+    padding: 24px 10px 20px;
+    position: relative;
+    height: auto;
+    vertical-align: top;
+    text-align: right;
+    padding: 10px 0;
+    color: #FFF;
+    @include desktop {
+      width: calc(80% - 18px);
+    }
+  }
+
+  &__items {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    li:first-child {
+      width: 100%;
+    }
+    @include desktop {
+      text-align: right;
+      li:first-child {
+        width: auto;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    vertical-align: middle;
+    line-height: 1;
+    display: inline-block;
+    margin: 0;
+    &-text {
+      float: left;
+      line-height: 32px;
+      text-align: left;
+      text-decoration: none;
+      padding: 0 10px;
+      color: #FFFFFF;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      text-transform: capitalize;
+      cursor: pointer;
+      font-size: 14px;
+      margin: 0 4px;
+    }
+  }
+
+  &__copyright {
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 7px;
+    text-align: center;
+    text-decoration: none;
+    clear: both;
+  }
+
+  &__search {
+    position: relative;
+    border: 1px #FFFFFF solid;
+    padding: 4px;
+    border-radius: 25px;
+    width: 220px;
+    text-align: left;
+    background: #4A4A4A;
+    margin: 10px auto 16px;
+    display: block;
+    @include desktop {
+      margin: 0 14px 0 0;
+      display: inline-block;
+    }
+    &-text {
+      background: #4A4A4A;
+      color: #FFFFFF;
+      width: calc(100% - 40px);
+      margin: 0 0 0 8px;
+      padding: 2px 0;
+      -webkit-appearance: none;
+      box-shadow: none !important;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+    &-icon {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &-submit {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 5px 12px;
+    }
+  }
+}

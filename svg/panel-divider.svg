@@ -1,0 +1,3 @@
+<svg class="panel-main__divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+  <polygon fill="#FFF" points="100 0 100 10 0 10"></polygon>
+</svg>

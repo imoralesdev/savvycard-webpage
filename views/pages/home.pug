@@ -1,16 +1,190 @@
 extends ../templates/main-layout
 
 block content
-  section.home#home
-    .home__column-1
-      .home__container
-        h1.home__header
-          | Transforming the way organizations define, design, and build software.
-        p.home__text
-          | We connect strategy with agile technology delivery and cloud and data services to bring your organization most valuable software-driven experiences to life.
-        button.btn.btn--primary#home_btn
-          | Learn more
-    .home__column-2 
-      .home__img
-        img(src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80")
+  section.panel.panel-orange
+    .panel__container
+      .panel__column-a
+        .panel__mobile-shell
+          img(src="https://savvycard-cdn.s3.amazonaws.com/images/savvycard-for/homepage-iphone.png")
+      .panel__column-b
+        .panel__header
+          | It's
+          i much
+          | more than a business card -  it's a SavvyCard!
+        .panel__text
+          | Using nothing more than your smart phone and SavvyCard you will:
+        ul.panel__list
+          li.panel__list-item
+            .panel__list-tick
+              svg
+                use(xlink:href='icons.svg#tick')
+            | Capture contact details
+          li.panel__list-item
+            .panel__list-tick
+              svg
+                use(xlink:href='icons.svg#tick')
+            | Empower your referral processes
+          li.panel__list-item
+            .panel__list-tick
+              svg
+                use(xlink:href='icons.svg#tick')
+            | Grow your business
+    svg.panel__divider
+      use(xlink:href='icons.svg#panel-divider')
+  section.panel
+    .panel__container.panel__container--about
+      h2.panel__sub-header
+        | What is SavvyCard?
+      p.panel__text-sixteen-pixel
+        | SavvyCard is your personalized business hub giving you the tools to share your valuable resources and grow your business with push-button ease. Watch our 70 second intro video to see what SavvyCard can do for you.
+      .panel__video
+        video(controls preload="metadata")
+          source(src="https://com-savvycard-cdn.s3.us-east-1.amazonaws.com/videos/what_is_savvycard_720p.mp4#t=1.6" type="video/mp4")
+  section.panel.panel--grey
+    .panel__container.panel__container--about
+      h2.panel__sub-header
+        | Which SavvyCard is Right for You?
+      ul.panel__choice
+        li.panel__choice-cards
+          a.panel__choice-card
+            .panel__choice-card-image
+              img(src="https://com-savvycard-cdn.s3.us-east-1.amazonaws.com/images/savvycard-for/savvycard-for-real-estate-image-v2.png" alt="SavvyCard for Real Estate")
+            h3.panel__choice-card-title.panel__choice-card-title--green
+              | SavvyCard for Real Estate
+            p.panel__choice-card-caption
+              | Take your leads back from the Portals!
+            ul.panel__choice-card-list
+              li.panel__choice-card-list-item
+                | Generate leads with push-button ease
+              li.panel__choice-card-list-item
+                | Empower your referral networking
+              li.panel__choice-card-list-item
+                | Increase social media exposure
+              li.panel__choice-card-list-item
+                | Close more deals!
+            .panel__learn-more.panel__learn-more--green
+              | Learn More
+            .panel__small
+              | A member of the CoreLogic Alliance Network
+            .panel__brand-logo
+              img(src="https://savvycard-cdn.s3.amazonaws.com/images/logo/corelogic-logo.png" alt="Corelogic Logo")
+        li.panel__choice-cards
+          a.panel__choice-card
+            .panel__choice-card-image
+              img(src="https://com-savvycard-cdn.s3.us-east-1.amazonaws.com/images/savvycard-for/savvycard-for-automotive-image.png")
+            h3.panel__choice-card-title.panel__choice-card-title--orange
+              | SavvyCard for Automotive
+            p.panel__choice-card-caption
+              | Capture more leads & grow sales!
+            ul.panel__choice-card-list
+              li.panel__choice-card-list-item
+                | Convert more on-lot & off-lot conversations into CRM leads
+              li.panel__choice-card-list-item
+                | Replace business cards with SavvyCards
+              li.panel__choice-card-list-item
+                | Increase first-time & repeat service customers
+              li.panel__choice-card-list-item
+                | Omni-channel customer engagement
+            .panel__learn-more.panel__learn-more--orange
+              | Learn More
+            .panel__small
+              | An Affinitiv Strategic Partner
+            .panel__brand-logo
+              img(src="https://savvycard-cdn.s3.us-east-1.amazonaws.com/images/logo/affinitiv-logo.png" alt="Affinitiv Logo")
+        li.panel__choice-cards
+          a.panel__choice-card
+            .panel__choice-card-image
+              img(src="https://com-savvycard-cdn.s3.us-east-1.amazonaws.com/images/savvycard-for/savvycard-for-business-image.png")
+            h3.panel__choice-card-title.panel__choice-card-title--blue
+              | SavvyCard for Business
+            p.panel__choice-card-caption
+              | Convert more sales with less work!
+            ul.panel__choice-card-list
+              li.panel__choice-card-list-item
+                | Build relationships faster
+              li.panel__choice-card-list-item
+                | Control your pipeline
+              li.panel__choice-card-list-item
+                | Differentiate yourself
+              li.panel__choice-card-list-item
+                | Increase conversion rates by 25x!
+            .panel__learn-more.panel__learn-more--blue
+              | Learn More
+        li.panel__choice-cards
+          a.panel__choice-card
+            .panel__choice-card-image
+              img(src="https://com-savvycard-cdn.s3.us-east-1.amazonaws.com/images/savvycard-for/savvycard-for-enterprise-image-v2.png")
+            h3.panel__choice-card-title
+              | SavvyCard for Enterprise
+            p.panel__choice-card-caption
+              | Empower your full sales force!
+            ul.panel__choice-card-list
+              li.panel__choice-card-list-item
+                | Automatically capture prospect data
+              li.panel__choice-card-list-item
+                | Distribute product and service offerings
+              li.panel__choice-card-list-item
+                | Motivate your sales team
+              li.panel__choice-card-list-item
+                | Increase ROI!
+            .panel__learn-more
+              | Learn More
+            .panel__small
+              | Health & Finance Solutions Sold by
+            .panel__brand-logo
+              img(src="https://savvycard-cdn.s3.amazonaws.com/images/logo/IBM-logo.svg" alt="IBM Logo")
+  section.panel
+    .panel__container.panel__container--about
+      h2.panel__sub-header.panel__sub-header--underline
+        | Why People Love SavvyCard
+      .quote-slider
+        .quote-slider__list
+          .quote-slider__slide.quote-slider__slide-active
+            p.quote-slider__text
+              | SavvyCard Technology has changed my life and grown my business more than anything else.
+            .quote-slider__author
+              .quote-slider__author-img
+                img(src="https://a2b3965fbc5578b4de5d-34db90ea760d01a85d988c7d51fd6f92.ssl.cf1.rackcdn.com/assets/img/homepage_assets/kenneth-moore.jpg")
+              .quote-slider__author-info
+                p.quote-slider__author-name
+                  | Kenneth Moore
+                p.quote-slider__author-title
+                  | Moore Property Services
+          .quote-slider__slide
+            p.quote-slider__text
+              | Using SavvyCard has grown my business by at least 10%.
+            .quote-slider__author
+              .quote-slider__author-img
+                img(src="https://a2b3965fbc5578b4de5d-34db90ea760d01a85d988c7d51fd6f92.ssl.cf1.rackcdn.com/assets/img/homepage_assets/roberto-gonzalez.jpg")
+              .quote-slider__author-info
+                p.quote-slider__author-name
+                  | Roberto Gonzalez
+                p.quote-slider__author-title
+                  | Owner, Tampa Limo & Car
+          .quote-slider__slide
+            p.quote-slider__text
+              | As a marketing professional, I'm thrilled with how much business I've generated, especially through social media. I recommend SavvyCard to all my clients.
+            .quote-slider__author
+              .quote-slider__author-img
+                img(src="https://a2b3965fbc5578b4de5d-34db90ea760d01a85d988c7d51fd6f92.ssl.cf1.rackcdn.com/assets/img/homepage_assets/pat-byron.jpg")
+              .quote-slider__author-info
+                p.quote-slider__author-name
+                  | Pat Byron
+                p.quote-slider__author-title
+                  | Marketing Coach, Business Partners of Lutz
+        .quote-slider__numbers
+          .quote-slider__active
+            | 1
+          .quote-slider__of
+            | of
+          .quote-slider__length
+            | 3
+        span#quote_slider_left.quote-slider__left-arrow(data-movement='left')
+          svg
+            use(xlink:href='icons.svg#arrow')
+        span#quote_slider_right.quote-slider__right-arrow(data-movement='right')
+          svg
+            use(xlink:href='icons.svg#arrow')
+
+
 

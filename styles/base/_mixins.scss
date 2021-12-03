@@ -13,3 +13,9 @@
     width: 100%;
   }
 }
+
+@mixin desktop {
+	@media (min-width: $desktop) {
+		@content
+	}
+}

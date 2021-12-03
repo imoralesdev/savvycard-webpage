@@ -7,6 +7,7 @@ class App {
     this.createContent()
     this.createPages()
     this.addRouterListeners()
+    this.createNavigation()
 
     // Reacting to back or foward button to router
     window.onpopstate = () => {
