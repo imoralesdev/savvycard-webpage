@@ -1,6 +1,7 @@
 /* ==========================================================================
 	VARIABLES
 ========================================================================== */
+/* Colors */
 $color-black: #111111;
 $color-white: #FFFFFF;
 $color-red: #FF4136;
@@ -10,6 +11,20 @@ $color-orange: #FF851B;
 $color-yellow: #FFDC00;
 $color-green: #2ECC40;
 $color-gray: #AAAAAA;
+$savvy-black: #4A4A4A;
 
+/* Media Query Breakpoints */
 $tablet: 1080px;
 $desktop: $tablet + 1;
+$tabletLandscape: 1120px;
+$phone: 700px;
+$respHeader: 1024px;
+$respPromo: 820px;
+$resp980: 980px;
+$resp940: 940px;
+$resp880: 880px;
+$resp600: 600px;
+
+/* Global Dimensions */
+
+/* Animation */

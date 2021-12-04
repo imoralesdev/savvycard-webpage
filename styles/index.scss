@@ -1,17 +1,14 @@
 @import
-"base/reset",
-
-/* Utils */
-"utils/variables",
-"utils/functions",
+/* Vendor */
+"base/normalize",
 
 /* Base */
+"base/variables",
+"base/functions",
 "base/mixins",
+"base/browser-tweaks",
 "base/global",
-
-/* Pages */
-"pages/home/home",
-"pages/about/about",
+"base/animation",
 
 /* Components */
 "components/nav",
