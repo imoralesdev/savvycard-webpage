@@ -1,0 +1,56 @@
+extends ../templates/main-layout
+
+block content
+  section.panel.panel-green
+    .panel__container
+      .panel__column-a
+        .panel__mobile-shell
+          img(src="https://com-savvycard-cdn.s3.us-east-1.amazonaws.com/images/savvycard-for/realestate-iphone.png")
+      .panel__column-b
+        .panel__header
+          | It's
+          i much
+          | more than a business card -  it's a SavvyCard!
+        .panel__text
+          | Using nothing more than your smart phone and SavvyCard you will:
+        ul.panel__list
+          li.panel__list-item
+            .panel__list-tick
+              svg
+                use(xlink:href='icons.svg#tick')
+            | Capture contact details
+          li.panel__list-item
+            .panel__list-tick
+              svg
+                use(xlink:href='icons.svg#tick')
+            | Empower your referral processes
+          li.panel__list-item
+            .panel__list-tick
+              svg
+                use(xlink:href='icons.svg#tick')
+            | Grow your business
+    svg.panel__divider
+      use(xlink:href='icons.svg#panel-divider')
+  section.panel.panel--detail
+    .panel__container.panel__container--detail
+      h2.panel__detail-header
+        | What is SavvyCard for Real Estate?
+      .panel__detail-column
+        p.panel__detail-text
+          | SavvyCard for Real Estate uses your MLS data to automatically create SavvyCards for you AND for your listings! Use these SavvyCards to generate leads online through Social Media and through your customer's friends and family, quickly and inexpensively!
+        ol.panel__detail-list
+          li.panel__detail-list-item
+            | Generate leads with push-button ease
+          li.panel__detail-list-item
+            | Empower your referral networking
+          li.panel__detail-list-item
+            | Increase social media exposure
+          li.panel__detail-list-item
+            | Close more deals!
+      .panel__detail-column
+        .panel__detail-img
+          img(src="https://com-savvycard-cdn.s3.amazonaws.com/images/savvycard-for/sc4re_product_page_graphic1.jpg")
+      button.panel__detail-cta
+        | Get Your SavvyCard Now !
+          
+  

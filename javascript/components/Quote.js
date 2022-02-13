@@ -6,8 +6,8 @@ export default class Quote extends Component {
       element: ".quote-slider",
       elements: {
         quotes: ".quote-slider__list",
-        quotesSlideLeft: document.getElementById("quote_slider_left"),
-        quotesSlideRight: document.getElementById("quote_slider_right"),
+        quotesSlideLeft: "#quote_slider_left",
+        quotesSlideRight: "#quote_slider_right",
         quotesCountNumber: ".quote-slider__active"
       }
     })

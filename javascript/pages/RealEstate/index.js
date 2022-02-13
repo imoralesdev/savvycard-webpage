@@ -1,7 +1,6 @@
 import Page from "classes/Page"
-import Quote from "components/Quote"
 
-export default class Home extends Page {
+export default class RealEstate extends Page {
   constructor() {
     super({
       id: "home",
@@ -14,10 +13,6 @@ export default class Home extends Page {
 
   create() {
     super.create()
-    this.createQuote()
-  }
-
-  createQuote() {
-    this.quote = new Quote()
+    console.log("Real Estate")
   }
 }

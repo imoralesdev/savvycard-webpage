@@ -55,7 +55,6 @@
     height: auto;
     vertical-align: top;
     text-align: right;
-    float: right;
     margin-right: 10px;
     display: none;
     @include desktop {
@@ -65,12 +64,12 @@
 
   &__menu {
     vertical-align: top;
-    float: left;
+    display: inline-block;
   }
 
   &__menu-item {
     overflow: hidden;
-    float: right;
+    float: left;
   }
 
   &__menu-item a {
@@ -119,14 +118,23 @@
       a {
         color: #F3A636;
         &:hover {
-          color: #FFF !important;
+          color: #FFF;
           background: #F3A636;
+        }
+      }
+
+      &:hover {
+        a {
+          color: #FFF;
         }
       }
     }
 
     &:hover {
       color: #EF942C;
+      a {
+        color: #EF942C;
+      }
     }
   }
 

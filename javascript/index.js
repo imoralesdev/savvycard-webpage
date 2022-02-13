@@ -1,5 +1,5 @@
 import Home from "./pages/Home"
-import About from "./pages/About"
+import RealEstate from "./pages/RealEstate"
 import Navigation from "./components/Navigation"
 
 class App {
@@ -30,7 +30,7 @@ class App {
   createPages() {
     this.pages = {
       home: new Home(),
-      about: new About()
+      real_estate: new RealEstate()
     }
 
     this.page = this.pages[this.template]
