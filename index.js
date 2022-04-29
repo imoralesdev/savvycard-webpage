@@ -33,6 +33,30 @@ app.get("/savvycard-for-real-estate", (req, res) => {
   })
 })
 
+app.get("/savvycard-for-automotive", (req, res) => {
+  res.render("pages/automotive", {
+    template: "automotive",
+    title:
+      "SavvyCard for Real Estate™ – Generate Leads Quickly and Inexpensively"
+  })
+})
+
+app.get("/savvycard-for-business", (req, res) => {
+  res.render("pages/business", {
+    template: "business",
+    title:
+      "SavvyCard for Real Estate™ – Generate Leads Quickly and Inexpensively"
+  })
+})
+
+app.get("/savvycard-for-enterprise", (req, res) => {
+  res.render("pages/enterprise", {
+    template: "enterprise",
+    title:
+      "SavvyCard for Real Estate™ – Generate Leads Quickly and Inexpensively"
+  })
+})
+
 app.listen(port, () =>
   console.log(`Dev server running at http://localhost:${port}`)
 )

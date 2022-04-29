@@ -42,8 +42,11 @@ img {
   border: 0px solid;
   
   &--primary {
-    color: #F3A636;
+    color: #F3A636 !important;
     border: solid #F3A636 2px;
+    padding: 6px 10px;
+    transition: border .3s, color .3s, background .3s;
+    
     &:hover {
       color: #FFF !important;
       background: #F3A636;

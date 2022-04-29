@@ -1,6 +1,6 @@
 import Page from "classes/Page"
 
-export default class RealEstate extends Page {
+export default class Enterprise extends Page {
   constructor() {
     super({
       id: "home",
@@ -13,6 +13,6 @@ export default class RealEstate extends Page {
 
   create() {
     super.create()
-    console.log("Real Estate Page")
+    console.log("Enterprise Page")
   }
 }

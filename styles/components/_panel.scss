@@ -21,6 +21,16 @@
     background-image: linear-gradient(153deg, #C5E39D 0%, #629819 95%);
   }
 
+  &-blue {
+    @extend .panel-orange;
+    background-image: linear-gradient(153deg, #51CCEC 0%, #216893 95%);
+  }
+
+  &-grey {
+    @extend .panel-orange;
+    background-image: linear-gradient(156deg, #CECECE 0%, #4A4A4A 85%);
+  }
+
   &--grey {
     background: #F4F4F4;
   }
@@ -46,6 +56,11 @@
     &--detail {
       flex-flow: wrap;
       padding: 100px 0;
+      &--alt {
+        .panel__detail-column:nth-child(1) { order: 2; }
+        .panel__detail-column:nth-child(2) { order: 1; }
+        .panel__detail-cta { order: 3; } 
+      }
     }
   }
 
@@ -60,6 +75,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    text-align: center;
     @include desktop {
       width: 60%;
     }
@@ -80,6 +96,25 @@
 
     i {
       margin: 0 10px;
+    }
+
+    &--small {
+      font-size: 20px;
+      font-style: italic;
+      color: #FFFFFF;
+      text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      margin: 0 0 16px;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    &--medium {
+      font-size: 32px;
+      color: #FFFFFF;
+      text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      font-weight: bold;
+      margin: 32px 0;
+      text-align: left;
     }
   }
 
@@ -120,6 +155,24 @@
       padding: 0px 0 42px;
       line-height: 32px;
       font-size: 16px;
+    }
+
+    &-bubble {
+      background: rgba(255, 255, 255, 0.7);
+      display: block;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+      width: 100%;
+      margin: 3em auto;
+      color: #4A4A4A;
+      padding: 30px;
+      font-size: 16px;
+      line-height: 1.4;
+      text-align: left;
+      &-bold {
+        font-weight: bold;
+        font-style: italic;
+      }
     }
   }
 
@@ -352,10 +405,15 @@
     }
 
     &-column {
-      width: 50%;
+      width: 100%;
       display: inline-block;
       vertical-align: top;
       flex: 0 0 50%;
+      margin: 0 0 26px;
+      @include desktop {
+        width: 50%;
+        margin: 0;
+      }  
     }
 
     &-text {
@@ -406,5 +464,18 @@
       cursor: pointer;
       display: block;
     }
+  }
+
+  &__cta {
+    background: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #ef942c;
+    text-align: center;
+    padding: 14px 112px;
+    margin: 16px 0;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 }

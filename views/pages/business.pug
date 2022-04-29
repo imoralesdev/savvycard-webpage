@@ -1,0 +1,76 @@
+extends ../templates/main-layout
+
+block content
+  section.panel.panel-blue
+    .panel__container
+      .panel__column-a
+        .panel__mobile-shell
+          img(src="https://savvycard-cdn.s3.amazonaws.com/images/savvycard-for/kenneth-travis-savvycard.png")
+      .panel__column-b
+        h1.panel__header--small
+          | SavvyCard for Business™
+        p.panel__header--medium
+          | Provide enhanced digital experiences that engage and convert!
+        .panel__text-bubble
+          | "I love my SavvyCard™. It helps me provide superior service and generate warm referral leads. Business cards just can’t do that. I think it’s the beginning of something that’s going to become really big." -
+          span.panel__text-bubble-bold
+            | Kenneth Travis, 
+          | Success Mortgage Partners
+        button.panel__cta
+          | Learn More
+    svg.panel__divider
+      use(xlink:href='icons.svg#panel-divider')
+  section.panel.panel--detail
+    .panel__container.panel__container--detail
+      h2.panel__detail-header
+        | What is SavvyCard for Business?
+      .panel__detail-column
+        p.panel__detail-text
+          | You might think SavvyCard is simply a digital business card, but it’s not – it’s so much more! It’s a personalized business hub that gives you the tools you need to easily share your valuable resources and grow your business – all with push-button ease.
+        ol.panel__detail-list
+          li.panel__detail-list-item
+            | Automatically capture contact details from prospects and referrals
+          li.panel__detail-list-item
+            | Centralize all your valuable online resources
+          li.panel__detail-list-item
+            | Empower your referral networking
+          li.panel__detail-list-item
+            | Improve your search engine ranking
+          li.panel__detail-list-item
+            | Differentiate yourself from competition
+      .panel__detail-column
+        .panel__detail-img
+          img(src="https://com-savvycard-cdn.s3.amazonaws.com/images/savvycard-for/sc4b_product_page_graphics_2ndsection_static_graphic.jpg")
+      button.panel__detail-cta
+        | Get Your SavvyCard Now !
+  section.panel.panel--detail
+    .panel__container.panel__container--detail.panel__container--detail--alt
+      h2.panel__detail-header
+        | Why Should You Choose SavvyCard?
+      .panel__detail-column
+        p.panel__detail-text
+          | SavvyCard requires no downloads or installs. When shared, SavvyCard captures and stores your prospect’s contact information so you have the data you need to stay proactive in your sales process. It also prompts your prospect to save your contact info to their phone, ensuring you bypass call screening and blocking of unknown numbers!
+        p.panel__detail-text
+          | SavvyCard includes robust social media integration so you can market your business online with push-button ease, and it aggregates your important online information,
+        p.panel__detail-text
+          | When you share a SavvyCard, you’re not just sharing contact information, you’re sharing valuable resources that make it easy for your prospect to say “yes”!
+        ol.panel__detail-list
+          li.panel__detail-list-item
+            | Lead capture forms
+          li.panel__detail-list-item
+            | Push-button social media marketing
+          li.panel__detail-list-item
+            | Centralized resource & recommended partner lists
+          li.panel__detail-list-item
+            | Real-time referral notifications (with contact info!)
+          li.panel__detail-list-item
+            | White-glove customization
+          li.panel__detail-list-item
+            | Free training & support
+      .panel__detail-column
+        .panel__detail-img
+          img(src="https://com-savvycard-cdn.s3.amazonaws.com/images/savvycard-for/sc4b_product_page_graphics_1stsection_video_graphic.jpg")
+      button.panel__detail-cta
+        | Get Your SavvyCard Now !
+          
+  

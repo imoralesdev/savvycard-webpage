@@ -1,6 +1,9 @@
 import Home from "./pages/Home"
 import RealEstate from "./pages/RealEstate"
+import Business from "./pages/Business"
+import Enterprise from "./pages/Enterprise"
 import Navigation from "./components/Navigation"
+
 
 class App {
   constructor() {
@@ -30,9 +33,11 @@ class App {
   createPages() {
     this.pages = {
       home: new Home(),
-      real_estate: new RealEstate()
+      real_estate: new RealEstate(),
+      business: new Business(),
+      enterprise: new Enterprise()
     }
-
+    
     this.page = this.pages[this.template]
     this.page.create()
   }

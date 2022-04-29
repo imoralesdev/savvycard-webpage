@@ -87,6 +87,7 @@
     padding: 0 16px;
     color: $savvy-black;
     text-decoration: none;
+    transition: color .3s;
     &:hover {
       color: #EF942C;
     }

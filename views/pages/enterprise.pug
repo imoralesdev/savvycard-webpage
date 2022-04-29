@@ -1,0 +1,42 @@
+extends ../templates/main-layout
+
+block content
+  section.panel.panel-grey
+    .panel__container
+      .panel__column-a
+        .panel__mobile-shell
+          img(src="https://com-savvycard-cdn.s3.us-east-1.amazonaws.com/images/savvycard-for/enterprise-iphone.png")
+      .panel__column-b
+        h1.panel__header--small
+          | SavvyCard for Enterprise™
+        p.panel__header--medium
+          | Empower your full sales force!
+        .panel__text-bubble
+          | "The power behind any successful company is its people, and the success it realizes is dependent on a deep understanding of the relationships built with customers, prospects, partners, and vendors. SavvyCard's SaaS platform empowers enterprise employees to evangelize corporate initiatives, build stronger business relationships, and mine big data critical to maximizing ROI."
+        button.panel__cta
+          | Learn More
+    svg.panel__divider
+      use(xlink:href='icons.svg#panel-divider')
+  section.panel.panel--detail
+    .panel__container.panel__container--detail
+      h2.panel__detail-header
+        | What is SavvyCard for Enterprise?
+      .panel__detail-column
+        p.panel__detail-text
+          | Our flexible lead development platform enables enterprise organizations to customize their SavvyCard solution with industry or need-specific tools and data that monetize the relationships between sales person, customer, and enterprise. With SavvyCard, your organization can increase ROI on sales efforts, automatically capture customer data, automate marketing efforts, and motivate sales teams.
+        ol.panel__detail-list
+          li.panel__detail-list-item
+            | Increase ROI
+          li.panel__detail-list-item
+            | Capture Customer Data
+          li.panel__detail-list-item
+            | Distribute Product and Service Offerings
+          li.panel__detail-list-item
+            | Streamline Marketing
+          li.panel__detail-list-item
+            | Motivate your Team
+      .panel__detail-column
+        .panel__detail-img
+          img(src="https://a2b3965fbc5578b4de5d-34db90ea760d01a85d988c7d51fd6f92.ssl.cf1.rackcdn.com/assets/img/homepage_assets/what-is-sc4b.jpg")
+      button.panel__detail-cta
+        | Get Your SavvyCard Now !
